@@ -1,10 +1,13 @@
 package com.example.springboot.dto;
 
+import java.util.UUID;
+
 public class EnergyEstimationDto {
     private EnergyFormTypedDto electricity;
     private EnergyFormTypedDto gas;
     private String energySupplier;
     private String offerName;
+    private UUID id;
 
     public String getOfferName() {
         return offerName;
@@ -36,5 +39,13 @@ public class EnergyEstimationDto {
 
     public void setElectricity(EnergyFormTypedDto electricity) {
         this.electricity = electricity;
+    }
+
+    public UUID getId() {
+        return id;
+    }
+
+    public void setId(UUID id) {
+        this.id = id;
     }
 }

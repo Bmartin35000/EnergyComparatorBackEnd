@@ -5,6 +5,7 @@ import com.example.springboot.entity.EnergyEstimationEntity;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.UUID;
 
 @Service
 public class EnergyEstimationService {
@@ -27,5 +28,13 @@ public class EnergyEstimationService {
 
     public void deleteEnergyEstimations() {
         this.energyEstimationRepository.deleteAll();
+    }
+
+    public void deleteEnergyEstimation(UUID id) {
+        this.energyEstimationRepository.deleteById(id);
+    }
+
+    public void editEnergyEstimation(EnergyEstimationDto energyEstimationDto) {
+        this.energyEstimationRepository.save(this.energyEstimationMapper.fromDto(energyEstimationDto));
     }
 }

@@ -18,7 +18,6 @@ public class EnergyEstimationMapper {
         EnergyPriceDto energyPriceDtoGasSubscription =
                 new EnergyPriceDto(energyEstimationEntity.getGas().getSubscriptionMonthlyPrice(), energyEstimationEntity.getGas().getSubscriptionAnnualPrice());
 
-
         EnergyResultDto energyResultDtoEnergy = new EnergyResultDto();
         energyResultDtoEnergy.setKilowatt(energyPriceDtoEnergyKilowatt);
         energyResultDtoEnergy.setSubscription(energyPriceDtoEnergySubscription);
@@ -40,6 +39,7 @@ public class EnergyEstimationMapper {
         energyEstimationDto.setEnergySupplier(energyEstimationEntity.getEnergySupplier());
         energyEstimationDto.setElectricity(energyFormTypedDtoEnergy);
         energyEstimationDto.setGas(energyFormTypedDtoGas);
+        energyEstimationDto.setId(energyEstimationEntity.getId());
 
         return energyEstimationDto;
     }
@@ -64,6 +64,7 @@ public class EnergyEstimationMapper {
         energyEntity.setSubscriptionMonthlyPrice(energyEstimationDto.getElectricity().getTotal().getSubscription().getMonthlyPrice());
         energyEntity.setSubscriptionAnnualPrice(energyEstimationDto.getElectricity().getTotal().getSubscription().getAnnualPrice());
         energyEstimationEntity.setEnergy(energyEntity);
+        energyEstimationEntity.setId(energyEstimationDto.getId());
 
         return energyEstimationEntity;
     }
