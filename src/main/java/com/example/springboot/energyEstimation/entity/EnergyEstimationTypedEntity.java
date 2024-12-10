@@ -1,6 +1,6 @@
-package com.example.springboot.entity;
+package com.example.springboot.energyEstimation.entity;
 
-import com.example.springboot.dto.EnergyTypeEnumDto;
+import com.example.springboot.energyEstimation.dto.EnergyTypeEnumDto;
 
 import javax.persistence.*;
 import java.util.UUID;

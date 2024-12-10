@@ -1,4 +1,4 @@
-package com.example.springboot.dto;
+package com.example.springboot.energyEstimation.dto;
 
 import java.util.UUID;
 

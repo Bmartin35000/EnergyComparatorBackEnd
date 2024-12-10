@@ -1,4 +1,4 @@
-package com.example.springboot.dto;
+package com.example.springboot.energyEstimation.dto;
 
 public class EnergyResultDto {
     private EnergyPriceDto subscription;

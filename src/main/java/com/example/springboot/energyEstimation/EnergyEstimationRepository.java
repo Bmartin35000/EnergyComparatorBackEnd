@@ -1,6 +1,6 @@
-package com.example.springboot;
+package com.example.springboot.energyEstimation;
 
-import com.example.springboot.entity.EnergyEstimationEntity;
+import com.example.springboot.energyEstimation.entity.EnergyEstimationEntity;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 

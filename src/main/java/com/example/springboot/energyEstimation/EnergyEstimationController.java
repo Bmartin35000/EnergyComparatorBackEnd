@@ -1,6 +1,6 @@
-package com.example.springboot;
+package com.example.springboot.energyEstimation;
 
-import com.example.springboot.dto.EnergyEstimationDto;
+import com.example.springboot.energyEstimation.dto.EnergyEstimationDto;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;

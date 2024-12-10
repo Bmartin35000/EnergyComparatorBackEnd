@@ -1,4 +1,4 @@
-package com.example.springboot.entity;
+package com.example.springboot.energyEstimation.entity;
 
 import javax.persistence.*;
 import java.util.UUID;

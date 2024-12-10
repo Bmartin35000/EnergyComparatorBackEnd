@@ -1,8 +1,8 @@
-package com.example.springboot;
+package com.example.springboot.energyEstimation;
 
-import com.example.springboot.dto.*;
-import com.example.springboot.entity.EnergyEstimationEntity;
-import com.example.springboot.entity.EnergyEstimationTypedEntity;
+import com.example.springboot.energyEstimation.dto.*;
+import com.example.springboot.energyEstimation.entity.EnergyEstimationEntity;
+import com.example.springboot.energyEstimation.entity.EnergyEstimationTypedEntity;
 import org.springframework.stereotype.Component;
 
 
